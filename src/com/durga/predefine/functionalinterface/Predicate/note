@@ -1,0 +1,8 @@
+Java people defined some predefined functional interface which is introduced in Java 1.8 version.
+All the interface is present in Java.util.function
+1- predicate -> if you want to perform some conditional check and return true/false (returns boolean value) based on that condition.
+2- function
+3- consumer
+4- supplier
+...
+ and so on
