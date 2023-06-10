@@ -1,0 +1,11 @@
+Java people defined some predefined functional interface which is introduced in Java 1.8 version.
+All the interface is present in Java.util.function
+
+2- function --> Function interface can take two type of argument T as Input Type and R as a return type. 
+To perform certain operation and to return some result then we should go for FUnction interface.
+interface Function<T,R>
+{
+	R apply(T);
+	
+	//and so on.
+}
