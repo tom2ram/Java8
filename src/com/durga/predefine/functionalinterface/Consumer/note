@@ -1,0 +1,4 @@
+3. consumer --> It will accept an input and perform some logic, It will not return anything.
+public interface Consumer<T> {
+	void accept(T t);
+}

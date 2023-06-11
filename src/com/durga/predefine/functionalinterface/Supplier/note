@@ -1,0 +1,5 @@
+4. Supplier --> It will not provide an input and perform some logic, It will return anything.
+I want to get some thing but I will not provide anything then will go for Supplier.
+public interface Supplier<R> {
+	R get();
+}
