@@ -1,0 +1,19 @@
+Two-Argument (Bi) Functional Interfaces- BiPredicate, BiFunction & BiConsumer
+
+BiPredicate --> If you want to take two input values and perform some conditional check and return boolean then go for BiPredicate.
+ @param <T> the type of the first argument to the predicate
+ @param <U> the type of the second argument the predicate
+public interface BiPredicate<T, U> {
+    boolean test(T t, U u);
+}
+
+BiFunction --> If you want to take two input values and perform some operation and return something then go for BiFunction.
+ * @param <T> the type of the first argument to the function and @param <U> the type of the second argument to the function
+public interface BiFunction<T, U, R> {
+	R apply(T t, U u); //@param <R> the type of the result of the function
+}
+
+BiConsumer --> If you want to take two input values and perform some operation and don't want to return anything then go for BiConsumer.
+public interface BiConsumer<T, U> {
+	void accept(T t, U u);
+}
