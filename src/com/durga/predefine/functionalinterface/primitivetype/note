@@ -1,0 +1,21 @@
+1 - Autoboxing - Compiler is responsible for autoboxing. Primitive type is convert to respective Wrapper object.
+Suppose Integer i = 10; It is valid after JDK 1.5 onwards. It means complier will convert automatically to Integer i = Integer.valueOf(10);
+
+2 - AutoUnboxing - Reverse of Autoboxing. Automatic conversion of Wrapper Object to respective Primitive type.
+Suppose Integer I = new Integer(10);
+int x = I; --> It is perfectly valid after JDK 1.5 Onwards.It is also done by compiler.
+Compiler convert it to int x = I.intValue();
+
+				   AutoUnboxing
+				>>>>>>>>>>>>>>>>>>
+Wrapper Object  <<<<<<<<<<<<<<<<<<		Primitive type
+					Autoboxing
+				
+3 - Generics Type Parameters -
+suppose I am writting AL<Integer> l = new AL<Integer>(); --> Here Integer is called Type Parameter.
+For the type parameters, Only allowed parameters are Object type. Primitives are not allowed.
+so we cann't write AL<Int> l = new AL<Int>(); wrong
+
+
+Need of Primitive Type Functional Interfaces --> To improve performance. If we pass Primitive type to Functional Interfaces then 
+Autoboxing and AutoUnboxing happen which reduce the performance.
