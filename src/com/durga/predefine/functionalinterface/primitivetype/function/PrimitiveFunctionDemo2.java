@@ -1,13 +1,13 @@
 package com.durga.predefine.functionalinterface.primitivetype.function;
 
-import java.util.function.IntFunction;
+import java.util.function.ToIntFunction;
 
 //Demo Programs about Primitve Type Functional Interfaces for Function
-public class PrimitiveFunctionDemo1
+public class PrimitiveFunctionDemo2
 {
 	public static void main(String[] args)
 	{
-		IntFunction<Integer> f = i -> i*i;
-		System.out.println(f.apply(4));
+		ToIntFunction<String> f = s -> s.length();
+		System.out.println(f.applyAsInt("Khalid"));
 	}
 }
