@@ -1,0 +1,21 @@
+Method and Constructor Reference By using :: Operator
+:: Double colon Operator --> we can use :: Operator for Method Reference and constructor Reference
+without lambda expression we can define m1 method of functional interface by using method reference. 
+only one condition is there both method having same arguments type. No matter about return type and modifier it can be same or diffrent.
+Biggest advantage is code reusability.
+Method Reference is alternative syntax to Lambda Expressions.
+The target method can b static method or instance method.
+Syntax for Method Reference -
+	Static method
+		classname :: target method name
+		
+	Non static (instance) Method
+		Object reference :: target method name
+		
+Constructor Reference --> 
+Constructor Reference is alternative syntax to Lambda Expressions.
+without lambda expression we can define m1 method of functional interface by using method reference.
+only one condition is there both method and Constructor having same arguments type. No matter about return type and modifier it can be same or diffrent.
+
+Syntax for Constructor Reference - 
+		classname :: new 
