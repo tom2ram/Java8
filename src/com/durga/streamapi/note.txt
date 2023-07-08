@@ -1,0 +1,41 @@
+Introduction to Streams API came in Java 1.8 version
+Java.io.stream is present in JDK then why streams come in java 1.8.
+Java-io.streams is related to file read/write operation (input output) but the Streams is no way related to file  read write.
+Stream 1.8 is used for collection Object.
+
+Collection is a group of objects as a single entity.
+Streams -> If you want to process objects from collection then better to go for streams.
+
+stream method is present inside collection interface as default method. It will call to any collection object.
+Stream s = c.stream(); --> c is any collection object and we will get Stream object. Stream is an interface present in java.util.stream package.
+once we got the Stream , then we can process the element by using collection object.
+that processing contain two steps-
+1) configuration -> configure the Stream can be done by two ways. a) filter mechanism and b) map mechanism
+if you want to filter only then we should go for filter mechanism. I want to filter from the element collection based on some boolean condition.
+filter mechanism have less number of object as its original collection.
+Stream s = c.stream().filter(i -> i % 2 == 0)
+map mechanism -> for every collection object I want to create a mapped object based on some function. then should go for map mechanism.
+map mechanism have compulsory same number of object as its original collection.
+Stream s = c.stream().map(i -> i * 2)
+2) processing -> Stream is define several methods for processing.
+ a) collect() method --> this method collects the elements from the stream and adding it to specified Collection. 
+	we can use collect method for filter and map also.
+ b) count method --> This method returns the number of elements present in Stream. public long count() method.
+ c) sorted method --> we can use sorted method to sort elements inside Stream.We can sort based on default natural sorting order or
+ 	based on customized sorting order specified by Comparator Object.
+ 		i) sorted() --> for Default natural sorting order.
+ 		ii) sorted(Comparator c) --> for customized sorting order
+ 		
+ d) min() and max() method --> compulsory the collection element is in sorted order.
+ 		i) min(Comparator c) --> min value according to specific Comparator.
+ 		ii) max(Comparator c) --> max value according to specific Comparator.
+ 		
+ e) forEach() Method --> This method can't return any thing. This method can take Lambda Expression as argument and apply that lambda expression
+ 						 for each elements present in Stream.
+ 						 
+ f) toArray() method --> we can use toArray() method to copy elements present in the stream into specified Array.
+ 
+ g) stream.of() method --> we can apply stream for group of values and for arrays.
+ 		for example : 9,99,999,9999,99999 it is group of values so we can apply stream on it. It can not be collection then also we can apply stream.
+ 				double [] d = {10.1,10.2,10.3,10.4} ; we can apply stream on arrays also. It can not be collection then also we can apply stream.
+ 
