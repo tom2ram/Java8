@@ -1,4 +1,4 @@
-package com.durga.lambda.staticmethod;
+package com.durga.staticmethod;
 
 /*form 1.8 onwards, just to define general utility method, no where related to object state.
  * such type of general utility method inside interface. we can declare inside interface using static keywords.

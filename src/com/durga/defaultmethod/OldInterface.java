@@ -1,4 +1,4 @@
-package com.durga.lambda.defaultmethod;
+package com.durga.defaultmethod;
 
 interface OldInterface
 {

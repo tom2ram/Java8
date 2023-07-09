@@ -1,4 +1,4 @@
-package com.durga.lambda.defaultmethod;
+package com.durga.defaultmethod;
 
 //default method with multiple inheritance
 interface DefaultMethodInsideInterface3

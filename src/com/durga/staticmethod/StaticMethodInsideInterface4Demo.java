@@ -1,4 +1,4 @@
-package com.durga.lambda.staticmethod;
+package com.durga.staticmethod;
 
 /* Static method overriding case:
  * Overriding is not applicable to static interface method as the static method is not available to the child class 

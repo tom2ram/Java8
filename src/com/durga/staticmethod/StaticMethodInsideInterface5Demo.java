@@ -1,4 +1,4 @@
-package com.durga.lambda.staticmethod;
+package com.durga.staticmethod;
 
 /* from 1.8 version onwards, we can write main method inside interface and we can run directly interface.
 */
